@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tabla con jQuery y DataTables</title>
+    <link rel="stylesheet" href="/dataTables.dataTables.min.css" />
+</head>
+<body>
+<h1>Tabla con jQuery y DataTables - demo2</h1>
+<label for="torneo">Tipo de Torneo:</label>
+<select id="torneo" name="torneo">
+    <option value="ATP250" selected>ATP250</option>
+    <option value="ATP500">ATP500</option>
+    <option value="Grand Slam">Grand Slam</option>
+    <option value="Masters 1000">Masters 1000</option>
+    <option value="Masters Cup">Masters Cup</option>
+</select>
+<hr>
+<label for="limite">Mostrar:</label>
+<select id="limite" name="limite">
+    <option value="1" selected>1</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+    <option value="1000">1000</option>
+</select>
+<hr>
+<br>
+<table id="tabla-ejemplo" class="display">
+    <thead>
+    <tr><th>Torneo</th><th>Serie</th><th>Jugador 1</th><th>Jugador 2</th><th>Ganador</th></tr>
+    </thead>
+    <tbody>
+    <!-- Filas dinámicas -->
+    </tbody>
+
+</table>
+
+<hr>
+
+
+
+<button type="submit" id="obtenerInformacion">Obtener información</button>
+<button type="submit" id="limpiarInformacion">Limpiar información</button>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
